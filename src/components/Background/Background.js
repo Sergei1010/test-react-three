@@ -1,14 +1,14 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import * as THREE from 'three'
 
 const Background = () => {
   const containerRef = useRef()
+  const [height, setHeight] = useState(window.innerHeight)
 
   useEffect(() => {
     const container = containerRef.current
     const scene = new THREE.Scene()
     const width = window.innerWidth
-    const height = window.innerHeight
 
     const renderer = new THREE.WebGLRenderer()
     renderer.setSize(width, height)
@@ -90,14 +90,20 @@ const Background = () => {
       camera.updateProjectionMatrix()
     }
 
+    const onScroll = () => {
+      setHeight(window.innerHeight + window.scrollY) // Учитываем прокрутку страницы
+    }
+
     window.addEventListener('resize', resize)
+    window.addEventListener('scroll', onScroll)
 
     return () => {
       window.removeEventListener('mousemove', onMouseMove)
       window.removeEventListener('resize', resize)
+      window.removeEventListener('scroll', onScroll)
       container.removeChild(renderer.domElement)
     }
-  }, [])
+  }, [height])
 
   return (
     <div
@@ -107,7 +113,7 @@ const Background = () => {
         top: 0,
         left: 0,
         width: '100%',
-        height: '100%',
+        height: `${height}px`, // Устанавливаем динамическую высоту
         zIndex: -1,
       }}
     />
