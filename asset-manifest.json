@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-react-three/static/css/main.a48f8db0.css",
-    "main.js": "/test-react-three/static/js/main.3274583b.js",
+    "main.css": "/test-react-three/static/css/main.d1a1a717.css",
+    "main.js": "/test-react-three/static/js/main.42a15680.js",
     "static/media/Inter_18pt-ExtraBold.ttf": "/test-react-three/static/media/Inter_18pt-ExtraBold.c9a0d06db60f5cd270d4.ttf",
     "static/media/Inter_18pt-Medium.ttf": "/test-react-three/static/media/Inter_18pt-Medium.c51b145d8cf66a74cc74.ttf",
     "static/media/Inter_18pt-Regular.ttf": "/test-react-three/static/media/Inter_18pt-Regular.86c330c66f7333ff6202.ttf",
@@ -18,11 +18,11 @@
     "index.html": "/test-react-three/index.html",
     "static/media/ArrowLeft.svg": "/test-react-three/static/media/ArrowLeft.903488f94b88fc7dcc042c1ba516a2dc.svg",
     "static/media/ArrowRight.svg": "/test-react-three/static/media/ArrowRight.c58e0349268889bb261bcfbaecd23ab4.svg",
-    "main.a48f8db0.css.map": "/test-react-three/static/css/main.a48f8db0.css.map",
-    "main.3274583b.js.map": "/test-react-three/static/js/main.3274583b.js.map"
+    "main.d1a1a717.css.map": "/test-react-three/static/css/main.d1a1a717.css.map",
+    "main.42a15680.js.map": "/test-react-three/static/js/main.42a15680.js.map"
   },
   "entrypoints": [
-    "static/css/main.a48f8db0.css",
-    "static/js/main.3274583b.js"
+    "static/css/main.d1a1a717.css",
+    "static/js/main.42a15680.js"
   ]
 }
