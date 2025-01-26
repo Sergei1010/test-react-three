@@ -1,0 +1,10 @@
+@import './modules/_fonts.scss';
+@import './modules/_reset.scss';
+@import './modules/_variables.scss';
+
+body {
+  font-family: 'Inter';
+  max-width: 1728px;
+  background-color: rgb(37, 40, 71);
+  color: $white;
+}
